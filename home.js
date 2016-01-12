@@ -1,5 +1,7 @@
 'use strict';
 
-let welcome = require('./welcome');
+let welcome = require('./welcome.js');
 
-welcome("hove");
+welcome("home");
+
+exports.welcome = welcome;
