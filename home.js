@@ -1,4 +1,5 @@
-import welcome from './welcome.js';
+
+let welcome = require('./welcome');
 
 welcome("home");
 
