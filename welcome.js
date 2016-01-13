@@ -1,6 +1,5 @@
 'use stricrt';
 
-module.export = function(message) {
-  alert('Welcome ${message}');
+module.exports = function(message) {
+  alert(`Welcome ${message}`);
 };
-

@@ -55,32 +55,13 @@ var home =
 
 /***/ },
 /* 1 */
-/***/ function(module, exports, __webpack_require__) {
-
-	/* WEBPACK VAR INJECTION */(function(module) {'use stricrt';
-
-	module.export = function(message) {
-	  alert('Welcome ${message}');
-	};
-
-
-	/* WEBPACK VAR INJECTION */}.call(exports, __webpack_require__(2)(module)))
-
-/***/ },
-/* 2 */
 /***/ function(module, exports) {
 
-	module.exports = function(module) {
-		if(!module.webpackPolyfill) {
-			module.deprecate = function() {};
-			module.paths = [];
-			// module.parent = undefined by default
-			module.children = [];
-			module.webpackPolyfill = 1;
-		}
-		return module;
-	}
+	'use stricrt';
 
+	module.exports = function(message) {
+	  alert(`Welcome ${message}`);
+	};
 
 /***/ }
 /******/ ]);
