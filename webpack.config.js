@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-=======
-
->>>>>>> module loaders
 const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
@@ -11,53 +7,33 @@ module.exports = {
         filename: "bundle.js",
         library: "home",
         libraryTarget: "var" 
-  },
-  
-  watch: NODE_ENV == 'development',
+    },
 
-  watchOptions: {
-    aggregateTimeout: 100
-  },
+    watch: NODE_ENV == 'development',
 
-  devtool:  NODE_ENV == 'development' ? "cheap-inline-modile-source-map" : null,
+    watch: true,
 
-  plugins: [
-     new webpack.DefinePlugin({
-      NODE_ENV: JSON.stringify(NODE_ENV),
-      LANG: JSON.stringify('ru')
-     })
-  ],
+    watchOptions: {
+        aggregateTimeout: 100
+    },
 
-  resolve: {
-    modulesDirectories: ['node_modules'],
-    moduleTemplates: ['', 'js']
-  },  
+    devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
 
-  resolveLoader: {
-    modulesDirectories: ['node_modules'],
-    moduleTemplates: ['*-loader', '*'],
-    extrensions: ['', 'js']
-  },
+    plugins: [
+        new webpack.DefinePlugin({
+            NODE_ENV:   JSON.stringify(NODE_ENV),
+            LANG:       JSON.stringify('ru')
+        })
+    ],
 
-  module: {
 
-    loaders: [{
-      test: /\.js$/,
-      loader: 'babel?optional[]=runtime'
-    }]
-  }
-
+    module: {
+    loaders: [
+        {
+            test: /\.js$/,
+            loader: `babel`,
+            exclude: /node_modules/
+        },
+      ]
+    }
 };
-
-if (NODE_ENV == 'production') {
-  module.exports.plagins.push(
-    new webpack.optimize.UglifyJsPlugin({
-      compress: {
-        warning: false,
-        drop_console: true,
-        unsafe: true
-      }
-    })
-  );
-}
->>>>>>> module loaders
