@@ -26,6 +26,16 @@ module.exports = {
         })
     ],
 
+    resolve: {
+        modulesDirectoties: ['node_modules'],
+        extensions: ['', '.js']
+    },
+
+    resolveLoader: {
+        modulesDirectoties: ['node_modules/'],
+        moduleTemplates: ['*-loader', '*'],
+        extensions: ['', '.js']
+    }
 
     module: {
     loaders: [
