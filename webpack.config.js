@@ -6,6 +6,7 @@ module.exports = {
     entry: {
         home: './home.js',
         about: './about.js',
+        common: ['./welcome.js', './common.js']
     },
     output: {
         path: __dirname + '/public',
