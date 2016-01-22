@@ -5,7 +5,8 @@ module.exports = {
     context: __dirname + '/frontend',
     entry: {
         home: './home.js',
-        about: './about.js'
+        about: './about.js',
+        welcome: './welcome.js'
     },
     output: {
         path: __dirname + '/public',
@@ -24,6 +25,7 @@ module.exports = {
     devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
 
     plugins: [
+        new webpack.NoErrorsPlugin(),
         new webpack.DefinePlugin({
             NODE_ENV:   JSON.stringify(NODE_ENV),
             LANG:       JSON.stringify('ru')
