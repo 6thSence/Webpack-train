@@ -2,11 +2,15 @@ const NODE_ENV = process.env.NODE_ENV || 'development';
 const webpack = require('webpack');
 
 module.exports = {
-    entry: "./home",
+    context: __dirname + '/frontend',
+    entry: {
+        home: './home.js',
+        about: './about.js'
+    },
     output: {
-        filename: "bundle.js",
-        library: "home",
-        libraryTarget: "var" 
+        path: __dirname + '/public',
+        filename: "[name].js",
+        library: "[name]"
     },
 
     watch: NODE_ENV == 'development',
