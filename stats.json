@@ -1,0 +1,334 @@
+{
+  "errors": [],
+  "warnings": [],
+  "version": "1.12.11",
+  "hash": "97fa649fef093aa29970",
+  "time": 6412,
+  "publicPath": "",
+  "assetsByChunkName": {
+    "about": "about.js",
+    "home": "home.js",
+    "common": "common.js"
+  },
+  "assets": [
+    {
+      "name": "about.js",
+      "size": 668,
+      "chunks": [
+        0
+      ],
+      "chunkNames": [
+        "about"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "home.js",
+      "size": 674,
+      "chunks": [
+        1
+      ],
+      "chunkNames": [
+        "home"
+      ],
+      "emitted": true
+    },
+    {
+      "name": "common.js",
+      "size": 9093,
+      "chunks": [
+        2
+      ],
+      "chunkNames": [
+        "common"
+      ],
+      "emitted": true
+    }
+  ],
+  "chunks": [
+    {
+      "id": 0,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 97,
+      "names": [
+        "about"
+      ],
+      "files": [
+        "about.js"
+      ],
+      "hash": "3d43aeccce43a9ed1566",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+          "name": "./about.js",
+          "index": 0,
+          "index2": 1,
+          "size": 97,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            0
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 698,
+            "building": 5638,
+            "dependencies": 1
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "\"use strict\";\n\nvar welcome = require('./welcome');\n\nwelcome(\"about\");\n\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+          "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+          "moduleName": "./about.js",
+          "loc": "",
+          "name": "about",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 1,
+      "rendered": true,
+      "initial": true,
+      "entry": false,
+      "extraAsync": false,
+      "size": 96,
+      "names": [
+        "home"
+      ],
+      "files": [
+        "home.js"
+      ],
+      "hash": "f3952cccee987ba618be",
+      "parents": [
+        2
+      ],
+      "modules": [
+        {
+          "id": 0,
+          "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+          "name": "./home.js",
+          "index": 2,
+          "index2": 2,
+          "size": 96,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            1
+          ],
+          "assets": [],
+          "issuer": null,
+          "profile": {
+            "factory": 29,
+            "building": 6298
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [],
+          "source": "\"use strict\";\n\nvar welcome = require('./welcome');\n\nwelcome(\"home\");\n\nexports.welcome = welcome;"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": [
+        {
+          "moduleId": 0,
+          "module": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+          "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+          "moduleName": "./home.js",
+          "loc": "",
+          "name": "home",
+          "reasons": []
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "rendered": true,
+      "initial": true,
+      "entry": true,
+      "extraAsync": false,
+      "size": 87,
+      "names": [
+        "common"
+      ],
+      "files": [
+        "common.js"
+      ],
+      "hash": "7afd6f26afdf7ea7c7aa",
+      "parents": [],
+      "modules": [
+        {
+          "id": 1,
+          "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/welcome.js",
+          "name": "./welcome.js",
+          "index": 1,
+          "index2": 0,
+          "size": 87,
+          "cacheable": true,
+          "built": true,
+          "optional": false,
+          "prefetched": false,
+          "chunks": [
+            2
+          ],
+          "assets": [],
+          "issuer": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+          "profile": {
+            "factory": 15,
+            "building": 22
+          },
+          "failed": false,
+          "errors": 0,
+          "warnings": 0,
+          "reasons": [
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+              "module": "./home.js",
+              "moduleName": "./home.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:14-34"
+            },
+            {
+              "moduleId": 0,
+              "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+              "module": "./about.js",
+              "moduleName": "./about.js",
+              "type": "cjs require",
+              "userRequest": "./welcome",
+              "loc": "3:14-34"
+            }
+          ],
+          "source": "\"use strict\";\n\nmodule.exports = function (message) {\n\n  alert(\"Welcome \" + message);\n};"
+        }
+      ],
+      "filteredModules": 0,
+      "origins": []
+    }
+  ],
+  "modules": [
+    {
+      "id": 0,
+      "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+      "name": "./about.js",
+      "index": 0,
+      "index2": 1,
+      "size": 97,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        0
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 698,
+        "building": 5638,
+        "dependencies": 1
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "\"use strict\";\n\nvar welcome = require('./welcome');\n\nwelcome(\"about\");\n\nexports.welcome = welcome;"
+    },
+    {
+      "id": 0,
+      "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+      "name": "./home.js",
+      "index": 2,
+      "index2": 2,
+      "size": 96,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        1
+      ],
+      "assets": [],
+      "issuer": null,
+      "profile": {
+        "factory": 29,
+        "building": 6298
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [],
+      "source": "\"use strict\";\n\nvar welcome = require('./welcome');\n\nwelcome(\"home\");\n\nexports.welcome = welcome;"
+    },
+    {
+      "id": 1,
+      "identifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/welcome.js",
+      "name": "./welcome.js",
+      "index": 1,
+      "index2": 0,
+      "size": 87,
+      "cacheable": true,
+      "built": true,
+      "optional": false,
+      "prefetched": false,
+      "chunks": [
+        2
+      ],
+      "assets": [],
+      "issuer": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+      "profile": {
+        "factory": 15,
+        "building": 22
+      },
+      "failed": false,
+      "errors": 0,
+      "warnings": 0,
+      "reasons": [
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/home.js",
+          "module": "./home.js",
+          "moduleName": "./home.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:14-34"
+        },
+        {
+          "moduleId": 0,
+          "moduleIdentifier": "/Users/d.pushkarskaya/Documents/Webpack-train/node_modules/babel-loader/index.js!/Users/d.pushkarskaya/Documents/Webpack-train/frontend/about.js",
+          "module": "./about.js",
+          "moduleName": "./about.js",
+          "type": "cjs require",
+          "userRequest": "./welcome",
+          "loc": "3:14-34"
+        }
+      ],
+      "source": "\"use strict\";\n\nmodule.exports = function (message) {\n\n  alert(\"Welcome \" + message);\n};"
+    }
+  ],
+  "filteredModules": 0,
+  "children": []
+}
