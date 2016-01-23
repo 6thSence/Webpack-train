@@ -4,14 +4,12 @@ const webpack = require('webpack');
 module.exports = {
     context: __dirname + '/frontend',
     entry: {
-        home: './home.js',
-        about: './about.js',
-        common: ['./welcome.js', './common.js']
+        app: './app'
     },
     output: {
-        path: __dirname + '/public',
+        path: __dirname + '/public/js',
+        publicPath: '/js/', 
         filename: "[name].js",
-        library: "[name]"
     },
 
     watch: NODE_ENV == 'development',
@@ -22,22 +20,8 @@ module.exports = {
         aggregateTimeout: 100
     },
 
-    devtool: NODE_ENV == 'development' ? "cheap-inline-module-source-map" : null,
-
     plugins: [
-        new webpack.NoErrorsPlugin(),
-        new webpack.DefinePlugin({
-            NODE_ENV:   JSON.stringify(NODE_ENV),
-            LANG:       JSON.stringify('ru')
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common',
-            cunks: ['about', 'home']
-        }),
-        new webpack.optimize.CommonsChunkPlugin({
-            name: 'common-goods',
-            cunks: ['shop', 'order']
-        })
+        new webpack.NoErrorsPlugin()
     ],
 
     resolve: {
